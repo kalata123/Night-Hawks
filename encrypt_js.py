@@ -1,8 +1,6 @@
 a = input(' -> ')
 b = ''
 c = ''
-#for i in a:
-#    c = ord(i)+10
 
 
 pc=0    
@@ -16,10 +14,7 @@ for i in b :
     c += chr(dc+32)
     pc=ord(i)
 
-#for i in b :
- #   a += chr(ord(i)-10)
+
     
-import base64
-    
-print (b)
+print ( '\n' , b,'\n')
 print(c)

@@ -1,0 +1,70 @@
+html {
+  background: url(Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#submit{
+	margin: auto;
+	margin: 0em 14em 0em 0em;
+
+}
+#recieve{
+	margin: auto;
+	margin: 1em 13.5em 0em 0em;
+
+}
+#wrapper {
+	margin: auto;
+	margin: 0em 27em 0em 0em;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 10px 100px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=password], select {
+    width: 100%;
+    padding: 10px 100px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 70px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div1 {
+    border-radius: 20px;
+	border: 1px solid #ccc;
+    background-color: #f2f2f2;
+	padding: 2.5%;
+	float: right;
+
+}
+div {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+	clear:both ;
+	float: left;
+}

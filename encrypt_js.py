@@ -1,20 +1,27 @@
-a = input(' -> ')
+#a = input(' -> ')
 b = ''
 c = ''
 
-
-pc=0    
-for i in a:
-    b += chr((ord(i)+107+pc-32)%95+32)
-    pc=(ord(i)+107+pc)%95
-
-pc=0
-for i in b :
-    dc= (ord(i)-107-pc+95-32)%95
-    c += chr(dc+32)
-    pc=ord(i)
-
-
+def encrypt(input):
+    pc=0
+    encodedInput=''    
+    for i in input:
+        encodedInput += chr((ord(i)+107+pc-32)%95+32)
+        pc=(ord(i)+107+pc)%95
     
+    return encodedInput
+        
+def decrypt(input):
+    pc=0
+    reversedInput=''
+    for i in input :
+        dc= (ord(i)-107-pc+95-32)%95
+        reversedInput += chr(dc+32)
+        pc=ord(i)
+    return reversedInput
+
+print(encrypt('asd'))
+print (decrypt(encrypt('asd')))
+
 print ( '\n' , b,'\n')
 print(c)

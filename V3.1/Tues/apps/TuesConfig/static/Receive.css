@@ -9,6 +9,7 @@ html {
 	margin: auto;
 	margin: 0em 14em 0em 0em;
 
+
 }
 #recieve{
 	margin: auto;
@@ -18,6 +19,7 @@ html {
 #wrapper {
 	margin: auto;
 	margin: 0em 27em 0em 0em;
+
 }
 input[type=text], select {
     width: 100%;
@@ -62,6 +64,7 @@ div1 {
 	float: right;
 
 }
+
 div {
     border-radius: 20px;
     background-color: #f2f2f2;

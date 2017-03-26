@@ -19,7 +19,7 @@ from .views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/$', IndexView.as_view(),name="load_index"),
-    url(r'^index/submit/$', post_data,name="post_data"),
+    #url(r'^index/$', IndexView.as_view(),name="load_index"),
+    url(r'^index/submit/$', SubmitView.as_view(),name="post_data"),
     url(r'^index/receive/$', ReceiveView.as_view(),name="receive"),
 ]

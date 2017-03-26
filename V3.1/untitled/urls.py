@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^imenaproekt/', include('Tues.apps.TuesConfig.urls'),name="load_index"),
+    url(r'^NeverFollowed/', include('Tues.apps.TuesConfig.urls'),name="load_index"),
 ]

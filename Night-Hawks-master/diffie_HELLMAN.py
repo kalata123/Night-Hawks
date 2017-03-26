@@ -1,0 +1,5 @@
+a = int(input('private one - > '))
+b = int(input('private two - > '))
+Ab = pow(pow(2,a,10**9+7),b,10**9+7)
+Ba = pow(pow(2,b,10**9+7),a,10**9+7)
+print ("Key -->" , Ab)

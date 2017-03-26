@@ -1,0 +1,42 @@
+<!doctype html>
+{% load static %}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static "Receive.css" %}">
+	</head>
+<div id="wrapper">
+
+	 {% block form_type %}
+	<form  method='POST' action='/NeverFollowed/index/receive/'>
+		{% endblock%}
+		{% csrf_token %}
+
+	<div id="Keyword">
+		<p><input type="password" name="Keyword" placeholder="Enter keyword..." ></p>
+	</div>
+
+	<div id="Message" class="message">
+		<p><input type="text" name="Message" placeholder="Enter message..."></p>
+	</div>
+
+	<div id="Answer">
+		<p><input type="text" name="Answer" readonly value="{{result}}"></p>
+	</div>
+
+	{% block form_button %}
+	<div>
+		<input id="recieve" type="submit" value="Decrypt">
+
+
+
+	</div>
+	{% endblock%}
+
+	</form>
+
+
+
+
+</div>
+
+</html>

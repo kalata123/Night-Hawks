@@ -1,0 +1,56 @@
+{% extends "receive.html" %}
+{% load static %}
+
+{% block form_type%}
+<form  method='POST' action='/NeverFollowed/index/submit/'>
+
+	{% endblock%}
+
+
+	 {% block form_button %}
+		<div>
+			<input id="submit" type="submit" value="Encrypt">
+		</div>
+	{% endblock%}
+<!--
+<html>
+<style type="text/css">
+#wrapper {
+margin: auto;
+width: 30em;
+}
+#Message{
+	width: 50%;
+	clear: right;
+}
+#Keyword{
+	width: 50%;
+	float: left;
+}
+#Code{
+	width: 50%;
+	float: left;
+}
+
+</style>
+<div id="wrapper">
+<form  method='POST' action='/imenaproekt/index/submit/' >
+	 {% csrf_token %}
+<div id="Keyword">
+	<p>Keyword:</p>
+	<p><input type="password" name="Keyword" ></p>
+</div>
+	<div id="Message" class="message">
+		<p>Message:</p>
+		<p><input type="text" name="Message"></p>
+	</div>
+	<div id="Crypted_file">
+		<p>Send to your friend:</p>
+		<p><input type="text" name="country" readonly></p>
+	</div>
+	<div>
+		<input type="submit" type="button">
+	</div>
+</div>
+</form>
+</html>-->
